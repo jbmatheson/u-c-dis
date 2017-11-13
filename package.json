@@ -4,7 +4,11 @@
   "description": "image crop and zoom",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",    
+    "start-wp": "webpack-dev-server --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jim Matheson",
@@ -16,8 +20,11 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "file-loader": "^1.1.5",
+    "gh-pages": "^1.0.0",
+    "homepage": "https://jbmatheson.github.io/u-c-dis/",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-scripts": "^1.0.17",
     "url-loader": "^0.6.2",
     "webpack-dev-server": "^2.9.4"
   },
