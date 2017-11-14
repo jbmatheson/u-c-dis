@@ -5,11 +5,10 @@
   "main": "main.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages build",
     "start": "react-scripts start",
-    "build": "react-scripts build",    
-    "start-wp": "webpack-dev-server --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "react-scripts build",
+    "start-wp": "webpack-dev-server --hot"
   },
   "author": "Jim Matheson",
   "license": "ISC",
@@ -21,7 +20,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "file-loader": "^1.1.5",
     "gh-pages": "^1.0.0",
-    "homepage": "https://jbmatheson.github.io/u-c-dis/",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "^1.0.17",
